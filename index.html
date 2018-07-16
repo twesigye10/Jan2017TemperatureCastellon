@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <!-- Google Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <style>
+    body {
+        font-size: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        fill: #8C8C8C;
+        text-align: center;
+    }
+    
+    .title {
+        text-anchor: middle;
+        font-size: 16px;
+        fill: #5E5E5E;
+    }
+    
+    .city {
+        text-anchor: middle;
+        font-size: 24px;
+        fill: #5E5E5E;
+    }
+    
+    .stn {
+        text-anchor: middle;
+        font-size: 12px;
+        font-weight: 300;
+        fill: #D3D3D3;
+    }
+    
+    .startstn {
+        font-size: 10px;
+        text-anchor: start;
+        font-weight: 300;
+        fill: #D3D3D3;
+    }
+    
+    .stnLine {
+        stroke: #C4C4C4;
+    }
+    
+    .axisText {
+        fill: #D3D3D3;
+        font-size: 10px;
+        font-weight: 300;
+        text-anchor: middle;
+        text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+    }
+    
+    .axisCircles {
+        fill: none;
+        stroke: #F0F0F0;
+        stroke-width: 1px;
+    }
+    
+    .legendText {
+        font-size: 10px;
+        font-weight: 400;
+        fill: #8C8C8C;
+        text-align: center;
+    }
+    
+    .d3-tip {
+        line-height: 2;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        border-radius: 2px;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    
+    .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.9);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+    }
+    /* Style northward tooltips differently */
+    
+    .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="chart"></div>
+    <script src = "js/js.js">    </script>
+</body>
+
+</html>
